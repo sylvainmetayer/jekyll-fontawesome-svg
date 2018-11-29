@@ -1,3 +1,4 @@
+require 'liquid'
 require "jekyll/fontawesome/svg/version"
 require "jekyll/fontawesome/svg/fa-icon"
 require 'jekyll/fontawesome/svg/fa-item'
