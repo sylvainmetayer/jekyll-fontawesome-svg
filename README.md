@@ -1,5 +1,7 @@
 # Jekyll::Fontawesome::Svg
 
+[![Gem Version](https://badge.fury.io/rb/jekyll-fontawesome-svg.svg)](https://badge.fury.io/rb/jekyll-fontawesome-svg)
+
 Use all of [FontAwesome Icons](http://fontawesome.com/) without the need to import the full css / svg.
 
 This Jekyll plugin will look for the icon you include in your page and only include the icons you used. 
