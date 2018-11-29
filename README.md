@@ -1,8 +1,26 @@
 # Jekyll::Fontawesome::Svg
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/jekyll/fontawesome/svg`. To experiment with that code, run `bin/console` for an interactive prompt.
+Use all of [FontAwesome Icons](http://fontawesome.com/) without the need to import the full css / svg.
 
-TODO: Delete this and the text above, and describe your gem
+This Jekyll plugin will look for the icon you include in your page and only include the icons you used. 
+
+## Usage
+
+- When you want to include an icon, you can use the same name as you will do to with FontAwesome
+
+    `{% fa_svg fab.fa-twitter %}`
+    
+    Use the `fa_svg` liquid tag, with the type of the icon you want to use (`fab`, `fas` or `far`), a dot (**important**) and the icon name. 
+
+    Each icon get the `icon` class, which you can use in your CSS to customize the appearance of your icon.
+    
+- You will need to have in **one** part of your project (at the end of your layout for example) liquid tag to generate the SVG definition.
+
+    The syntax is this one `{% fa_svg_generate %}` 
+
+### Examples
+
+You can find an example on [my personnal site repository](https://github.com/sylvainmetayer/sylvainmetayer), more specifically [here](https://github.com/sylvainmetayer/sylvainmetayer/blob/feature/48-fa-module/_includes/icons.html) and [here](https://github.com/sylvainmetayer/sylvainmetayer/blob/feature/48-fa-module/_includes/social-links.html)
 
 ## Installation
 
@@ -19,10 +37,6 @@ And then execute:
 Or install it yourself as:
 
     $ gem install jekyll-fontawesome-svg
-
-## Usage
-
-TODO: Write usage instructions here
 
 ## Development
 
