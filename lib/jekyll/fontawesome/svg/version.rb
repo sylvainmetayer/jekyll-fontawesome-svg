@@ -1,5 +1,5 @@
 module Jekyll
-  module Fontawesome
+  module FontAwesome
     module Svg
       VERSION = "0.1.0"
     end
