@@ -8,8 +8,7 @@ module Jekyll
         def render(context)
           output = nil
           unless context.environments.first['page']['fa_svg'].nil?
-            output = '
-              <svg display="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            output = '<svg display="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                   <defs>
                   <!--
                   Font Awesome Free 5.5.0 by @fontawesome - https://fontawesome.com
@@ -17,15 +16,13 @@ module Jekyll
                   -->
               '
 
-            context.environments.first['page']['fa_svg'].each do |icon|
+            context.environments.first['page']['fa_svg'].uniq.each do |icon|
               fa_icon = FontAwesomeIcon.new(icon)
               output += fa_icon.to_svg_html
             end
 
-            output += '
-                  </defs>
-              </svg>
-              '
+            output += '</defs>
+              </svg>'
           end
 
           unless output.nil?
