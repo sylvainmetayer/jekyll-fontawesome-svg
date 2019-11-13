@@ -1,7 +1,7 @@
 # Jekyll::Fontawesome::Svg
 
 [![Gem Version](https://badge.fury.io/rb/jekyll-fontawesome-svg.svg)](https://badge.fury.io/rb/jekyll-fontawesome-svg)
-[![Depfu](https://badges.depfu.com/badges/8854fd930f182d7c719d31bc443abd5e/overview.svg)](https://depfu.com/github/sylvainmetayer/sylvainmetayer?project_id=6389)
+[![Depfu](https://badges.depfu.com/badges/d521ae5f24ef6e78836190d909cae87e/overview.svg)](https://depfu.com/github/sylvainmetayer/jekyll-fontawesome-svg?project_id=6388)
 [![Build Status](https://travis-ci.org/sylvainmetayer/jekyll-fontawesome-svg.svg?branch=master)](https://travis-ci.org/sylvainmetayer/jekyll-fontawesome-svg)
 
 Use all of [FontAwesome Icons](http://fontawesome.com/) without the need to import the full css / svg.
@@ -21,16 +21,6 @@ This Jekyll plugin will look for the icon you include in your page and only incl
 - You will need to have in **one** part of your project (at the end of your layout for example) liquid tag to generate the SVG definition.
 
     The syntax is this one `{% fa_svg_generate %}` 
-
-- [Academicons](https://jpswalsh.github.io/academicons/) are also available. To use them
-
-    `{% a_svg google-scholar %}`
-
-    Each icon get the `academic-icon` class, which you can use in your CSS to customize the appearance of your icon.
-
-- You will need to have in **one** part of your project (at the end of your layout for example) liquid tag to generate the SVG definition.
-
-    The syntax is this one `{% a_svg_generate %}` 
 
 ### Examples
 
