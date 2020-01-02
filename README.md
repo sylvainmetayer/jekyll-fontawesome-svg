@@ -69,3 +69,16 @@ Initial release
 ### v0.1.1
 
 Bug fix: on a page with multiple icon that are the same, their was duplicate declarations.
+
+### v0.2.0
+
+Added support for [academicons icons](http://github.com/jpswalsh/academicons)
+
+### v0.3.0
+
+Drop support for academicons, split it in a [dedicated gem](https://github.com/sylvainmetayer/jekyll-academicons-svg).
+
+### v0.3.1
+
+Fix: add viewbox of original svg instead of a fixed one. see #11 (thanks @benswift)
+

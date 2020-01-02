@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    jekyll-fontawesome-svg (0.3.0)
+    jekyll-fontawesome-svg (0.3.1)
 
 GEM
   remote: https://rubygems.org/
