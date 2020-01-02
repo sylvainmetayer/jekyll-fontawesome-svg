@@ -82,3 +82,6 @@ Drop support for academicons, split it in a [dedicated gem](https://github.com/s
 
 Fix: add viewbox of original svg instead of a fixed one. see #11 (thanks @benswift)
 
+### v0.3.2
+
+Fix travis
