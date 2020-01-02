@@ -39,10 +39,11 @@ module Jekyll
 
         def to_svg_html
           file = File.read(to_filename)
-          svg_html = /^.*path d="(.*)" ?\/>.*$/.match(file).captures.first
-          "<symbol id='#{@icon}' viewBox='0 0 1024 1024'>
+          path_data = /^.*path d="(.*)" ?\/>.*$/.match(file).captures.first
+          viewBox = /^.*viewBox="([^"]*)".*$/.match(file).captures.first
+          "<symbol id='#{@icon}' viewBox='#{viewBox}'>
             <title>#{to_icon_name}</title>
-            <path class='path1' d='#{svg_html}'></path>
+            <path class='path1' d='#{path_data}'></path>
         </symbol>
         "
         end
