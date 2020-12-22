@@ -14,6 +14,10 @@ This Jekyll plugin will look for the icon you include in your page and only incl
 
     `{% fa_svg fab.fa-twitter %}`
 
+    or
+
+    `{% fa_svg 'fab.fa-twitter' %}`
+
     Use the `fa_svg` liquid tag, with the type of the icon you want to use (`fab`, `fas` or `far`), a dot (**important**) and the icon name. 
 
     Each icon get the `icon` class, which you can use in your CSS to customize the appearance of your icon.
