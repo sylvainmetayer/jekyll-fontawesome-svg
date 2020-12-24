@@ -4,12 +4,15 @@ module Jekyll
   module FontAwesome
     module Svg
       class FontAwesomeSvgItemGenerator < Liquid::Tag
-        def initialize(tag_name, faIcon, tokens)
+        def initialize(tag_name, markup, tokens)
           super
-          @icon = FontAwesomeIcon.new(faIcon.strip)
+          @tmp_markup = markup
         end
 
         def render(context)
+          faIcon = context[@markup] ||= @tmp_markup
+          @icon = FontAwesomeIcon.new(faIcon.strip)
+          
           unless context.environments.first['page']['fa_svg'].is_a?([]::class)
             context.environments.first['page']['fa_svg'] = []
           end
